@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>The Ill Eagle Times</title>
+    <!-- <link rel="stylesheet" type="text/css" src="perm/style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/04a5898080.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="perm/style.css">
+
+
+
+
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+}
+
+function openSideDrawer() {
+            document.getElementById("side-drawer").style.left = "0";
+            document.getElementById("side-drawer-void").classList.add("d-block");
+            document.getElementById("side-drawer-void").classList.remove("d-none");
+        }
+function closeSideDrawer() {
+            document.getElementById("side-drawer").style.left = "-336px";
+            document.getElementById("side-drawer-void").classList.add("d-none");
+            document.getElementById("side-drawer-void").classList.remove("d-block");
+}
+
+var open = document.getElementById("navbar-toggler")
+var close = document.getElementById("lists")
+
+open.addEventListener("click", openSideDrawer);
+close.addEventListener("click", closeSideDrawer);
+
+
+mybutton.addEventListener("click", topFunction);
+</script>
+
+</head> 
+
+<body style="width:1000px; height: 100%;
+margin-left: 200px;
+
+padding: 0; 
+background-color: rgb(0, 2, 0)">
+
+
+<div id="side-drawer" class="position-fixed">
+    <div class="h-100 bg-white">
+      <!-- Side Drawer Title -->
+      <div class="p-4 bg-dark">
+        <a href="#">
+          <h1 class="text-white">Home</h1>
+        </a>
+      </div>
+      <!-- Side Drawer Links -->
+      <ul id="links" class="list-group" onclick="closeSideDrawer()" >
+        <a id="link-structure" href="#" class="list-group-item list-group-item-action border-0 rounded-0">Start</a>
+        <a id="link-css" href="#" class="list-group-item list-group-item-action border-0 rounded-0">News</a>
+        <a id="link-javascript" href="#" class="list-group-item list-group-item-action border-0 rounded-0">.Net</a>
+        <a id="link-customization" href="#" class="list-group-item list-group-item-action border-0 rounded-0">Demo Page</a>
+        <a id="link-customization" href="#" class="list-group-item list-group-item-action border-0 rounded-0">Demo Page2</a>
+        <a id="link-customization" href="#" class="list-group-item list-group-item-action border-0 rounded-0">Demo Page3</a>
+        <a id="link-customization" href="#" class="list-group-item list-group-item-action border-0 rounded-0 active">Close Sidebar</a>
+
+
+      </ul>
+    </div>
+  </div>
+
+<div id="side-drawer-void" class="position-fixed d-none"></div>
+<nav class="navbar navbar-dark bg-primary fixed-top">
+    <button class="navbar-toggler" id="navbar-toggler" onclick="openSideDrawer()" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <span class="navbar-text">
+      Project Name &copy; 2020
+    </span> -->
+  </nav>
+
+
+
+        <div class="container">
+            
+            <div id="topborder" style="display: inline;" class="row">
+                <h1 style="text-align: center;">TinyHat - Emporium</h1> 
+                <img  style= "position: absolute; bottom:15px; left: 450px" src="pics/pic1.png" align="left" width="50" height="45" alt="PRQ">
+            </div>
+
+            
+            <div class = "col-sm-12" id = "nav" style=
+            "margin-bottom: 10px;
+            text-align: center;
+            margin-top: 30px; 
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            padding-bottom: 10px;
+         ">
+               
+                <span style="padding-bottom: 6px; border-bottom: 10px dotted #000000;">
+                    <!-- <a href="?">Startsida</a> <a href="?p=colo">Colocation</a> <a href="?p=hardware">Dedicerade servrar och h&aring;rdvaruförsäljning</a> <a href="?p=webhost">Webhosting</a> <a href="?p=tunnel">Tunnlar</a> <a href="?p=company">Företaget</a> <a href="?p=contact">Kontakta</a> -->
+
+                    |
+                    <a href="?p=index" style = "text-decoration: underline;">Start</a>
+                    |
+                    <a href="aboutus.html" style = "text-decoration: line-through;">About Us</a>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Brian</a>
+                          <a href="#">Terry</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+    
+    
+                    |
+                    <a href="?p=company"style = "text-decoration: none;">About Tiny Hats</a>
+                    |
+                    <a href="?p=order"style = "text-decoration: none;">Order</a>
+                    |
+                    <a href="?p=contact"style = "text-decoration: none;">Contact us</a>
+                    |
+                    <a href="?p=index"style = "text-decoration: none;">End your baldness</a>
+                    |
+                </span>
+            </div>
+        </div>
+            <h2 class = "col-sm-12" style="text-align: center;">Welcome to PRQ!</h2>
+
+            <p style="color:blue">This is demo content.</p>
+
+            <p style=" text-align: right; font-size: 20px; color: blue; ">
+                We are a specialized hosting provider, located in Sweden, a free-speech haven. We serve a growing
+                community of international clients with special needs.
+            </p>
+            <h3 style="text-align: center;">What we do</h3>
+
+            <p class = "text-center"       >   These are words I made words.</p>
+
+            <h4 style="text-align: center;">PRQ is globally known for:</h4>
+            <dl style = "display: block; position: relative; left:250px"class = "col-sm-8" >
+                <dt style="font-weight: bold;">Refugee hosting</dt>
+                <dd>Our boundless commitment to free speech has been tested and proven over and over again.<br>
+                     If it is legal in Sweden, we will host it, and will keep it up regardless of any pressure to take it down.
+                </dd>
+                <dd>We have ZERO tolerance against SPAM and related services!</dd>
+                <dt style="font-weight: bold;">Confidentiality</dt>
+                <dd>We defend your integrity to the end.<br>
+                    With our discreet customer relations <br> policy we don't even have
+                    to know who you are, <br> and if we do, we will keep that knowledge strictly confidential.</dd>
+                <dt style="font-weight: bold;">Technical proficiency</dt>
+                <dd>The PRQ team has a solid background in computer networking, security, hardware, and software. <br>
+                    Most of us have been online for over 10 years. <br> 
+                    We can assist you with almost anything - keeping your
+                    servers secure, or keeping your high-traffic websites up and running smoothly.<br>
+                    To make this possible, we run our own fully multi-homed backbone network (AS33837),
+                     with the capacity needed both to handle large DDoS attacks<br> and to provide excellent connectivity to customers
+                    with bandwidth utilization ranging from a few Mbps to several hundred.</dd>
+            </dl>
+
+
+
+
+
+              <footer>
+
+            <center>
+                
+              
+
+
+            <div class = "col-sm-12" style="display:inline; padding-bottom: 30px;" >
+                <a style="padding: 15px;" href="https://www.w3schools.com/%22%3EVisit Evil nonsense W3Schools" id="fineprint">PRQ, Box 1092, S-172 22 Sundbyberg / info@prq.se     </a>
+
+
+                <a style="padding: 15px;" href="https://www.w3schools.com/%22%3EVisit Evil nonsense W3Schools" id="fineprint">TinyHats, Cube 1092, S-172 22 Sweden / money@tinyhats.se</a>
+
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+            </div>    
+                <table >
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class = "col-sm-4" href="https://www.paypalsucks.com/%22%3E">
+                                    <img border="1" src="https://www.prq.se/pics/PayPalSucksLogo100.jpg"
+                                        alt="paypal sucks">
+                                </a>
+                            </td>
+                            <td>
+                                <a  class = "col-sm-4" href="https://www.eff.org/br%22%3E">
+
+                                    <img border="1" src="https://www.prq.se/pics/brstrip.gif"
+                                        alt="[Join the Blue Ribbon online free speech campaign]">
+
+                                </a>
+                            </td>
+
+
+
+                            <td>
+                                <a class = "col-sm-4" href="https://www.dataretentionisnosolution.com/%22%3E">
+                                    <img border="1" src="https://www.prq.se/pics/dataretention.gif"
+                                        alt="[Data Retention is no solution]">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </footer>
+
+
+
+
+
+
+
+
+
+        </div>
+    </body>
+
+</html>
