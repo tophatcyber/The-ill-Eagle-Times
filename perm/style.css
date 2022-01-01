@@ -91,7 +91,13 @@ background-color: transparent;
 
 
 .body-texts{ 
-    margin-top:50px;
+    margin-top:65px;
     color: white;
+ }
+
+ .navbar{
+     height:40px;
+     margin-top: 0px;
+     
  }
 
