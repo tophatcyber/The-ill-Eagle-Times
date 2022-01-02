@@ -96,8 +96,12 @@ background-color: transparent;
  }
 
  .navbar{
-     height:40px;
+     height:30px;
      margin-top: 0px;
-     
+
  }
 
+ .topmenu{
+     color: white;
+     
+ }
