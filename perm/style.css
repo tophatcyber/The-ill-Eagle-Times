@@ -72,7 +72,7 @@
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: rgb(170, 0, 0);}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
@@ -145,7 +145,7 @@
   }
   
   .heads{
-    background-color: #f2f900;
+    background-color: #2c2c2b;
     height: 30px;
   }
   
@@ -161,7 +161,7 @@
     border: 2px solid #c51cd2;
     padding: 5px;
     color:white;
-    background-color: black;
+    background-color: rgb(46, 46, 46);
   }
   
   
@@ -274,5 +274,4 @@
     background-color: #00fe00;
     text-align: center;
   }
-  style.css
-  5 KB
+
